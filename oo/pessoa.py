@@ -21,5 +21,12 @@ if __name__ == '__main__':
         print(filho.nome)
     paulo.sobrenome = 'José'
     del paulo.filhos
+    paulo.olhos = 1
+    del paulo.olhos
     print(paulo.__dict__)
     print(pek.__dict__)
+    Pessoa.olhos = 3
+    print(Pessoa.olhos)
+    print(paulo.olhos)
+    print(pek.olhos)
+    print(id(Pessoa.olhos)), print(id(paulo.olhos)), print(id(pek.olhos))
